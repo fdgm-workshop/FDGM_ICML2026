@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundations of Deep Generative Models | ICML 2026 Workshop</title>
+    <meta name="description" content="ICML 2026 workshop on memorization, generalization, and reasoning in deep generative models.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="site-header" id="top">
+            <nav class="site-nav" aria-label="Primary">
+                <a class="brand" href="#top">FDGM 2026</a>
+                <div class="nav-links">
+                    <a href="#overview">Overview</a>
+                    <a href="#topics">Topics of Interest</a>
+                    <a href="#call-for-papers">Call for Papers</a>
+                    <a href="#schedule">Schedule</a>
+                    <a href="#speakers">Speakers</a>
+                    <a href="#organizers">Organizers</a>
+                    <a href="#awards">Awards</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+
+            <section class="hero">
+                <div class="hero-content">
+                    <p class="eyebrow">ICML 2026 Workshop</p>
+                    <h1>Foundations of Deep Generative Models</h1>
+                    <p class="hero-subtitle">Understanding Memorization, Generalization, and Reasoning</p>
+                    <p class="hero-description">
+                        A full-day workshop for researchers studying what deep generative models actually learn, when they memorize,
+                        when they generalize, and how they support structured reasoning in modern AI and scientific discovery.
+                    </p>
+
+                    <p class="hero-meta-line">Seoul, South Korea &middot; ICML 2026 workshop window: July 10-11, 2026</p>
+                    <p class="hero-meta-line hero-meta-line-secondary">One-day workshop &middot; 6 confirmed invited speakers &middot; Expected attendance: 200-300</p>
+                    <p class="hero-question-label">Central question</p>
+                    <p class="hero-question">
+                        What do deep generative models truly learn, and under what conditions do they memorize training data,
+                        genuinely generalize, or reason beyond the data they were trained on?
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#schedule">View Schedule</a>
+                        <span class="button button-disabled" aria-disabled="true" title="OpenReview submission site coming soon">Submission Site</span>
+                        <a class="button button-secondary" href="#contact">Contact Organizers</a>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <section class="section" id="overview">
+                <div class="section-heading">
+                    <p class="eyebrow">Overview</p>
+                    <h2>Why this workshop now</h2>
+                    <p class="section-intro">
+                        Deep generative models now power image synthesis, video generation, language modeling, and scientific discovery,
+                        but their most important capabilities are still poorly understood.
+                    </p>
+                </div>
+
+                <div class="overview-grid">
+                    <article class="lead-card">
+                        <p>
+                            Diffusion models, flow-based models, and autoregressive models have delivered impressive empirical gains.
+                            At the same time, major open questions remain around reliability, interpretability, privacy, and scientific use.
+                            This workshop creates a focused venue for theory, empirical analysis, and domain-driven applications to meet.
+                        </p>
+                        <p>
+                            The program is designed around a practical scientific question: when a model appears capable, is it
+                            reproducing training data, capturing a real distributional structure, or performing a stronger form of
+                            compositional reasoning that transfers beyond what it has seen?
+                        </p>
+                    </article>
+
+                    <div class="focus-stack">
+                        <article class="focus-card">
+                            <h3>Memorization</h3>
+                            <p>
+                                Understand how over-parameterized DGMs retain, reproduce, or expose training data, and what that means
+                                for privacy, robustness, and trustworthy deployment.
+                            </p>
+                        </article>
+
+                        <article class="focus-card">
+                            <h3>Generalization</h3>
+                            <p>
+                                Characterize when generated samples reflect learned structure rather than template matching, and how
+                                model size, data complexity, and training dynamics shape that boundary.
+                            </p>
+                        </article>
+
+                        <article class="focus-card">
+                            <h3>Reasoning</h3>
+                            <p>
+                                Evaluate whether DGMs can support compositional, causal, or structured inference that matters for
+                                multi-step generation and scientific workflows.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="topics">
+                <div class="section-heading">
+                    <p class="eyebrow">Topics of Interest</p>
+                    <h2>Topics of Interest</h2>
+                    <p class="section-intro">
+                        The workshop welcomes work on foundational, empirical, and application-driven questions in deep generative models.
+                    </p>
+                </div>
+
+                <div class="overview-grid">
+                    <article class="lead-card">
+                        <p>
+                            This workshop aims to bring together researchers working on the foundations of diffusion models, flow-based models,
+                            autoregressive models, and related generative learning frameworks. We welcome work that sharpens our understanding
+                            of what DGMs learn, how they behave under scale, and how they can be evaluated reliably.
+                        </p>
+                        <p>
+                            The topics below reflect the research directions prioritized for the workshop and are intended to
+                            guide the scope of submissions and discussion during the workshop.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="theme-grid">
+                    <article class="theme-card">
+                        <span class="theme-index">01</span>
+                        <h3>Memorization and Generalization</h3>
+                        <p>
+                            Empirical and theoretical studies of memorization, generalization, regime transitions, and the roles of
+                            capacity, data complexity, and scaling.
+                        </p>
+                    </article>
+
+                    <article class="theme-card">
+                        <span class="theme-index">02</span>
+                        <h3>Reasoning and Compositionality</h3>
+                        <p>
+                            Mechanisms for compositional, causal, or structured inference, including in-context learning, chain-of-thought,
+                            and multi-step generation.
+                        </p>
+                    </article>
+
+                    <article class="theme-card">
+                        <span class="theme-index">03</span>
+                        <h3>Optimization and Inductive Bias</h3>
+                        <p>
+                            Learning dynamics, architecture, and implicit regularization in shaping memorization, generalization, and
+                            reasoning behavior.
+                        </p>
+                    </article>
+
+                    <article class="theme-card">
+                        <span class="theme-index">04</span>
+                        <h3>Evaluation and Benchmarking</h3>
+                        <p>
+                            Metrics and diagnostic frameworks for distinguishing memorization from genuine generalization, plus robustness,
+                            privacy, and extrapolation benchmarks.
+                        </p>
+                    </article>
+
+                    <article class="theme-card">
+                        <span class="theme-index">05</span>
+                        <h3>Scientific Discovery with DGMs</h3>
+                        <p>
+                            Applications in scientific machine learning, healthcare, protein design, and molecular discovery where
+                            interpretability and reasoning matter as much as raw sample quality.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section" id="call-for-papers">
+                <div class="section-heading">
+                    <p class="eyebrow">Call for Papers</p>
+                    <h2>Call for Papers</h2>
+                    <p class="section-intro">
+                        Submission logistics and formatting requirements will be posted here once they are finalized.
+                    </p>
+                </div>
+
+                <div class="overview-grid">
+                    <article class="summary-card">
+                        <h3>Submission instructions</h3>
+                        <ul class="bullet-list">
+                            <li>Submission deadlines and the official submission portal are to be announced.</li>
+                            <li>Contributed papers are expected to align with the workshop scope described in Topics of Interest.</li>
+                            <li>Accepted submissions are expected to appear as posters, with a subset selected for short oral presentations.</li>
+                        </ul>
+                        <p class="summary-note">
+                            Additional logistics, including review process details and camera-ready instructions, will be added once confirmed.
+                        </p>
+                    </article>
+
+                    <article class="summary-card">
+                        <h3>Formatting instructions</h3>
+                        <ul class="bullet-list">
+                            <li>Paper format, page limits, and anonymization requirements are to be announced.</li>
+                            <li>Templates and camera-ready instructions will be posted here once available.</li>
+                            <li>Please check back for finalized guidelines before submission opens.</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section" id="schedule">
+                <div class="section-heading">
+                    <p class="eyebrow">Schedule</p>
+                    <h2>Workshop schedule</h2>
+                    <p class="section-intro">
+                        This workshop combines invited talks, contributed oral presentations, poster sessions, a panel discussion,
+                        and closing awards.
+                    </p>
+                </div>
+
+                <div class="program-layout">
+                    <article class="summary-card">
+                        <h3>Format at a glance</h3>
+                        <ul class="bullet-list">
+                            <li>One-day in-person workshop within the ICML 2026 workshop program.</li>
+                            <li>Six invited talks spanning theory, reasoning, and scientific applications.</li>
+                            <li>Poster sessions and short oral slots reserved for contributed work.</li>
+                            <li>Panel discussion focused on open problems and future research directions.</li>
+                        </ul>
+                    </article>
+
+                    <div class="schedule-card">
+                        <div class="schedule-column">
+                            <h3>Morning</h3>
+                            <ul class="schedule-list">
+                                <li><span>8:20-8:30</span><strong>Opening remarks</strong></li>
+                                <li><span>8:30-9:00</span><strong>Invited talk 1</strong></li>
+                                <li><span>9:00-9:30</span><strong>Invited talk 2</strong></li>
+                                <li><span>9:30-10:30</span><strong>Poster session and break</strong></li>
+                                <li><span>10:30-11:00</span><strong>Invited talk 3</strong></li>
+                                <li><span>11:00-11:30</span><strong>Invited talk 4</strong></li>
+                                <li><span>11:30-11:45</span><strong>Oral presentation 1</strong></li>
+                                <li><span>11:45-12:00</span><strong>Oral presentation 2</strong></li>
+                            </ul>
+                        </div>
+
+                        <div class="schedule-column">
+                            <h3>Afternoon</h3>
+                            <ul class="schedule-list">
+                                <li><span>12:00-1:30</span><strong>Lunch</strong></li>
+                                <li><span>1:30-2:00</span><strong>Invited talk 5</strong></li>
+                                <li><span>2:00-2:30</span><strong>Invited talk 6</strong></li>
+                                <li><span>2:30-3:30</span><strong>Poster session and break</strong></li>
+                                <li><span>3:30-3:45</span><strong>Oral presentation 3</strong></li>
+                                <li><span>3:45-4:00</span><strong>Oral presentation 4</strong></li>
+                                <li><span>4:00-4:50</span><strong>Panel discussion</strong></li>
+                                <li><span>4:50-5:00</span><strong>Awards and closing</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-alt" id="speakers">
+                <div class="section-heading">
+                    <p class="eyebrow">Speakers</p>
+                    <h2>Confirmed invited speakers</h2>
+                    <p class="section-intro">
+                        All six invited speakers listed here are confirmed. The speaker slate spans theory, reasoning, optimization, and scientific applications of deep generative models across multiple continents and career stages.
+                    </p>
+                </div>
+
+                <div class="people-grid">
+                    <article class="person-card">
+                        <div class="person-avatar photo">
+                            <img src="figures/yi-ma.jpg" alt="Yi Ma">
+                        </div>
+                        <div class="person-body">
+                            <h3><a class="person-link" href="https://people.eecs.berkeley.edu/~yima/" target="_blank" rel="noopener noreferrer">Yi Ma</a></h3>
+                            <p class="person-role">Chair Professor, University of Hong Kong</p>
+                            <p class="person-note">Representative topics: <a class="topic-link" href="https://arxiv.org/abs/2508.17689" target="_blank" rel="noopener noreferrer">memorization in DGMs</a> and <a class="topic-link" href="https://proceedings.mlr.press/v267/chu25c.html" target="_blank" rel="noopener noreferrer">post-training generalization</a>.</p>
+                        </div>
+                    </article>
+
+                    <article class="person-card">
+                        <div class="person-avatar photo">
+                            <img src="figures/surya-ganguli.jpg" alt="Surya Ganguli">
+                        </div>
+                        <div class="person-body">
+                            <h3><a class="person-link" href="https://hai.stanford.edu/people/surya-ganguli" target="_blank" rel="noopener noreferrer">Surya Ganguli</a></h3>
+                            <p class="person-role">Associate Professor, Stanford University</p>
+                            <p class="person-note">Representative topics: <a class="topic-link" href="https://arxiv.org/abs/2502.07154" target="_blank" rel="noopener noreferrer">mathematical reasoning</a> and <a class="topic-link" href="https://arxiv.org/abs/2412.20292" target="_blank" rel="noopener noreferrer">creativity and inductive biases</a>.</p>
+                        </div>
+                    </article>
+
+                    <article class="person-card">
+                        <div class="person-avatar photo">
+                            <img src="figures/mengdi-wang.jpg" alt="Mengdi Wang">
+                        </div>
+                        <div class="person-body">
+                            <h3><a class="person-link" href="https://engineering.princeton.edu/faculty/mengdi-wang" target="_blank" rel="noopener noreferrer">Mengdi Wang</a></h3>
+                            <p class="person-role">Professor, Princeton University</p>
+                            <p class="person-note">Representative topics: <a class="topic-link" href="https://arxiv.org/abs/2302.07194" target="_blank" rel="noopener noreferrer">score approximation</a> and <a class="topic-link" href="https://www.nature.com/articles/s42256-024-00823-9" target="_blank" rel="noopener noreferrer">generative models for biology</a>.</p>
+                        </div>
+                    </article>
+
+                    <article class="person-card">
+                        <div class="person-avatar photo">
+                            <img src="figures/cengiz-pehlevan.jpg" alt="Cengiz Pehlevan">
+                        </div>
+                        <div class="person-body">
+                            <h3><a class="person-link" href="https://pehlevan.seas.harvard.edu/" target="_blank" rel="noopener noreferrer">Cengiz Pehlevan</a></h3>
+                            <p class="person-role">Associate Professor, Harvard University</p>
+                            <p class="person-note">Representative topics: <a class="topic-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12280938/" target="_blank" rel="noopener noreferrer">in-context learning theory</a> and <a class="topic-link" href="https://arxiv.org/abs/2503.03206" target="_blank" rel="noopener noreferrer">spectral bias and learning dynamics</a>.</p>
+                        </div>
+                    </article>
+
+                    <article class="person-card">
+                        <div class="person-avatar photo">
+                            <img src="figures/taiji.jpg" alt="Taiji Suzuki">
+                        </div>
+                        <div class="person-body">
+                            <h3><a class="person-link" href="https://ibis.t.u-tokyo.ac.jp/suzuki/" target="_blank" rel="noopener noreferrer">Taiji Suzuki</a></h3>
+                            <p class="person-role">Professor, University of Tokyo</p>
+                            <p class="person-note">Representative topics: <a class="topic-link" href="https://arxiv.org/abs/2405.20879" target="_blank" rel="noopener noreferrer">flow matching</a> and <a class="topic-link" href="https://arxiv.org/abs/2502.01694" target="_blank" rel="noopener noreferrer">chain-of-thought reasoning</a>.</p>
+                        </div>
+                    </article>
+
+                    <article class="person-card">
+                        <div class="person-avatar photo">
+                            <img src="figures/ge-liu.png" alt="Ge Liu">
+                        </div>
+                        <div class="person-body">
+                            <h3><a class="person-link" href="https://geliu.web.illinois.edu/" target="_blank" rel="noopener noreferrer">Ge Liu</a></h3>
+                            <p class="person-role">Assistant Professor, University of Illinois Urbana-Champaign</p>
+                            <p class="person-note">Representative topics: <a class="topic-link" href="https://www.nature.com/articles/s41587-024-02395-w" target="_blank" rel="noopener noreferrer">protein design</a> and <a class="topic-link" href="https://arxiv.org/abs/2405.16441" target="_blank" rel="noopener noreferrer">flow matching on structured spaces</a>.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section" id="organizers">
+                <div class="section-heading">
+                    <p class="eyebrow">Organizers</p>
+                    <h2>Organizing team</h2>
+                    <p class="section-intro">
+                        The team combines expertise across diffusion models, deep learning theory, optimization, sampling, and applications.
+                    </p>
+                </div>
+
+                <div class="people-grid organizers-grid">
+                    <article class="person-card">
+                        <div class="person-avatar photo">
+                            <img src="figures/molei-tao.jpg" alt="Molei Tao">
+                        </div>
+                        <div class="person-body">
+                            <h3><a class="person-link" href="https://mtao8.math.gatech.edu/" target="_blank" rel="noopener noreferrer">Molei Tao</a></h3>
+                            <p class="person-role">Professor, Georgia Institute of Technology</p>
+                            <p class="person-note">Research spans diffusion models, sampling, deep learning theory, optimization, and AI for science. He has organized workshops at NeurIPS and numerous seminars and minisymposia across applied mathematics and machine learning venues.</p>
+                        </div>
+                    </article>
+
+                    <article class="person-card">
+                        <div class="person-avatar photo">
+                            <img src="figures/renyuan-xu.png" alt="Renyuan Xu">
+                        </div>
+                        <div class="person-body">
+                            <h3><a class="person-link" href="https://renyuanxu.github.io/" target="_blank" rel="noopener noreferrer">Renyuan Xu</a></h3>
+                            <p class="person-role">Assistant Professor, Stanford University</p>
+                            <p class="person-note">Her research focuses on the foundations of generative AI, high-stakes decision systems, and machine learning in finance. She previously organized the Generative AI in Finance workshop at NeurIPS 2025.</p>
+                        </div>
+                    </article>
+
+                    <article class="person-card">
+                        <div class="person-avatar photo">
+                            <img src="figures/valentin.jpg" alt="Valentin De Bortoli">
+                        </div>
+                        <div class="person-body">
+                            <h3><a class="person-link" href="https://vdeborto.github.io/" target="_blank" rel="noopener noreferrer">Valentin De Bortoli</a></h3>
+                            <p class="person-role">Research Scientist, Google DeepMind</p>
+                            <p class="person-note">His research lies at the intersection of stochastic control, optimal transport, probability, statistics, and generative modeling. He has organized workshops across NeurIPS, ICML, and scientific computing communities.</p>
+                        </div>
+                    </article>
+
+                    <article class="person-card">
+                        <div class="person-avatar photo">
+                            <img src="figures/Qu_Qing.jpg" alt="Qing Qu">
+                        </div>
+                        <div class="person-body">
+                            <h3><a class="person-link" href="https://qingqu.engin.umich.edu/" target="_blank" rel="noopener noreferrer">Qing Qu</a></h3>
+                            <p class="person-role">Assistant Professor, University of Michigan</p>
+                            <p class="person-note">His research centers on the foundations of data science, optimization, deep representation learning, and diffusion models. He has led major community efforts including CPAL, DeepMath, and multiple tutorials and workshops on diffusion models.</p>
+                        </div>
+                    </article>
+
+                    <article class="person-card">
+                        <div class="person-avatar photo">
+                            <img src="figures/huangwei.JPG" alt="Wei Huang">
+                        </div>
+                        <div class="person-body">
+                            <h3><a class="person-link" href="https://weihuang05.github.io/" target="_blank" rel="noopener noreferrer">Wei Huang</a></h3>
+                            <p class="person-role">Research Scientist, RIKEN Center for Advanced Intelligence Project</p>
+                            <p class="person-note">His research focuses on the theoretical foundations of language models and deep learning. He has co-led the DeLTa workshops and co-organized related events in deep learning theory.</p>
+                        </div>
+                    </article>
+
+                    <article class="person-card">
+                        <div class="person-avatar photo">
+                            <img src="figures/john-vastola.jpeg" alt="John J. Vastola">
+                        </div>
+                        <div class="person-body">
+                            <h3><a class="person-link" href="https://www.rajanlab.com/team/john-vastola-phd" target="_blank" rel="noopener noreferrer">John J. Vastola</a></h3>
+                            <p class="person-role">Postdoctoral Researcher, Harvard University</p>
+                            <p class="person-note">His research examines generalization in generative models, the biological basis of memory, and principles of efficient learning, with publications in venues including Nature Communications, Cell Systems, NeurIPS, and ICLR.</p>
+                        </div>
+                    </article>
+
+                    <article class="person-card">
+                        <div class="person-avatar photo">
+                            <img src="figures/beatrice-achilli.png" alt="Beatrice Achilli">
+                        </div>
+                        <div class="person-body">
+                            <h3><a class="person-link" href="https://beatriceachilli.github.io/" target="_blank" rel="noopener noreferrer">Beatrice Achilli</a></h3>
+                            <p class="person-role">Postdoctoral Researcher, Bocconi University</p>
+                            <p class="person-note">Her research lies at the intersection of statistical physics and machine learning, with a particular focus on diffusion models.</p>
+                        </div>
+                    </article>
+
+                    <article class="person-card">
+                        <div class="person-avatar photo">
+                            <img src="figures/peng-wang.jpg" alt="Peng Wang">
+                        </div>
+                        <div class="person-body">
+                            <h3><a class="person-link" href="https://peng8wang.github.io/" target="_blank" rel="noopener noreferrer">Peng Wang</a></h3>
+                            <p class="person-role">Assistant Professor, University of Macau</p>
+                            <p class="person-note">His research focuses on theoretical machine learning, signal processing, and convergence theory for structured non-convex optimization. He has also served in recent area chair roles at ICLR and CPAL.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section section-alt" id="awards">
+                <div class="section-heading">
+                    <p class="eyebrow">Awards</p>
+                    <h2>Awards</h2>
+                    <p class="section-intro">
+                        The workshop schedule includes an awards-and-closing slot at the end of the day. Additional recognition details for outstanding submissions and presentations will be shared here.
+                    </p>
+                </div>
+
+                <article class="summary-card">
+                    <p>TBD</p>
+                </article>
+            </section>
+
+            <section class="section section-alt" id="contact">
+                <div class="section-heading">
+                    <p class="eyebrow">Contact</p>
+                    <h2>Workshop information</h2>
+                    <p class="section-intro">
+                        For questions about participation, contributions, or logistics, contact the workshop leads below.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <article class="contact-card">
+                        <h3>Primary contacts</h3>
+                        <ul class="contact-list">
+                            <li>
+                                <strong>Peng Wang</strong>
+                                <a href="mailto:pengw@um.edu.mo">pengw@um.edu.mo</a>
+                            </li>
+                            <li>
+                                <strong>Qing Qu</strong>
+                                <a href="mailto:qingqu@umich.edu">qingqu@umich.edu</a>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="contact-card">
+                        <h3>Planning notes</h3>
+                        <ul class="bullet-list">
+                            <li>ICML 2026 will be held in Seoul, South Korea, from July 6 to July 11, 2026.</li>
+                            <li>Workshops are scheduled for July 10 and July 11, 2026. The exact day for this workshop is to be announced.</li>
+                            <li>The workshop anticipates strong participation from both theory and applied DGM communities.</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>Foundations of Deep Generative Models at ICML 2026</p>
+        </footer>
+    </div>
+</body>
+</html>
