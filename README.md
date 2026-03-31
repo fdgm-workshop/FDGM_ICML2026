@@ -9,7 +9,7 @@ Static website for the ICML 2026 workshop:
 This site is plain HTML and CSS. There is no build step.
 
 ```powershell
-cd FDGM2026
+cd FDGM_ICML2026
 python -m http.server 8000
 ```
 
