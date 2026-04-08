@@ -77,7 +77,6 @@ section[id] {
     letter-spacing: 0.08em;
     color: var(--accent);
     text-decoration: none;
-    text-transform: uppercase;
 }
 
 .nav-links {
