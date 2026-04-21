@@ -255,6 +255,10 @@ h1 {
     font-size: 1.08rem;
 }
 
+#call-for-papers .section-intro {
+    max-width: none;
+}
+
 .overview-grid,
 .program-layout,
 .contact-grid {
