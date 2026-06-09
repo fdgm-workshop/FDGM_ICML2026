@@ -527,6 +527,46 @@ h1 {
     text-underline-offset: 0.16em;
 }
 
+.sponsor-card {
+    background:
+        linear-gradient(135deg, rgba(0, 39, 76, 0.04), rgba(45, 169, 224, 0.08)),
+        var(--surface);
+}
+
+.sponsor-content {
+    display: grid;
+    grid-template-columns: minmax(9rem, 12rem) 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 0.25rem;
+}
+
+.sponsor-logo-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 8.8rem;
+    padding: 1.1rem;
+    background: rgba(255, 255, 255, 0.82);
+    border-left: 4px solid rgba(45, 169, 224, 0.55);
+    overflow: hidden;
+}
+
+.sponsor-logo {
+    width: 100%;
+    max-width: 9rem;
+    margin: 0 auto;
+    transform: scale(1.45);
+    transform-origin: center;
+}
+
+.sponsor-content p {
+    max-width: 42rem;
+    color: var(--ink);
+    font-size: 1.08rem;
+    line-height: 1.75;
+}
+
 .site-footer {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -595,6 +635,20 @@ h1 {
 
     .person-card {
         grid-template-columns: 1fr;
+    }
+
+    .sponsor-content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .sponsor-logo-panel {
+        min-height: auto;
+        padding: 1.25rem;
+    }
+
+    .sponsor-logo {
+        max-width: 9rem;
     }
 }
 
