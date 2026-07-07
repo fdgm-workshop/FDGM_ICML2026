@@ -230,27 +230,70 @@
                         <div class="schedule-column">
                             <h3>Morning</h3>
                             <ul class="schedule-list">
-                                <li><span>8:00 AM</span><strong><a class="person-link" href="https://qingqu.engin.umich.edu/" target="_blank" rel="noopener noreferrer">Qing Qu</a></strong></li>
-                                <li><span>8:10 AM</span><strong><a class="person-link" href="https://geliu.web.illinois.edu/" target="_blank" rel="noopener noreferrer">Ge Liu</a></strong></li>
-                                <li><span>8:40 AM</span><strong><a class="person-link" href="https://ibis.t.u-tokyo.ac.jp/suzuki/" target="_blank" rel="noopener noreferrer">Taiji Suzuki</a></strong></li>
-                                <li><span>9:10 AM</span><strong>Poster &amp; Break</strong></li>
-                                <li><span>10:00 AM</span><strong><a class="person-link" href="https://people.eecs.berkeley.edu/~yima/" target="_blank" rel="noopener noreferrer">Yi Ma</a></strong></li>
-                                <li><span>10:30 AM</span><strong><a class="person-link" href="https://hai.stanford.edu/people/surya-ganguli" target="_blank" rel="noopener noreferrer">Surya Ganguli</a></strong></li>
-                                <li><span>11:00 AM</span><strong>3 Oral Presentations</strong></li>
-                                <li><span>11:45 AM</span><strong>Lunch Break</strong></li>
+                                <li><span>8:00 AM - 8:10 AM</span><strong><a class="person-link" href="https://qingqu.engin.umich.edu/" target="_blank" rel="noopener noreferrer">Opening Remarks - Qing Qu</a></strong></li>
+                                <li>
+                                    <span class="schedule-time">8:10 AM - 8:40 AM</span>
+                                    <strong><a class="person-link" href="https://geliu.web.illinois.edu/" target="_blank" rel="noopener noreferrer">Ge Liu</a></strong>
+                                    <p class="schedule-talk-title">Structured Generative Modeling for Scientific Data: Geometry, Symmetry, and Variable Length</p>
+                                    <details class="schedule-abstract">
+                                        <summary>Show Abstract</summary>
+                                        <p>Modern diffusion and flow-based generative models have become powerful tools for scientific discovery, yet many scientific problems go beyond probability paths defined in fixed-dimensional Euclidean spaces. Biological trajectories may lie on unknown manifolds, physical systems may obey Lie group symmetries, and protein or molecular design may require variable-length generation. This talk presents recent work from our group on generative modeling methods that respect these structures.</p>
+                                        <p>First, I will present a flow-matching method for trajectory inference and generation on unknown manifolds. We learn a geodesically convex latent space that enables meaningful interpolation, and then pull the learned transport dynamics back to the data space. This allows the model to discover the geometry of a general scientific data manifold and use it for more effective transport and generation. Second, I will describe Trivialized Generative Models, a new family of generative models for Lie groups. TGM learns endpoint-constrained paths in a fixed Lie algebra and lifts them to the Lie group, providing a simple and powerful way to define valid group-valued generative dynamics. This endpoint formulation enables flexible path design beyond standard geodesic or exponential interpolation, avoids key complications of general Riemannian generative models, naturally supports non-compact groups, and extends to few-step consistency models and momentum-based higher-order dynamics. Finally, I will introduce Generalized Poisson Flow for variable-length protein design, where the model jointly learns the evolution of length and the generation of length-dependent multimodal features. Our method achieves state-of-the-art empirical performance across unconditional structure and sequence generation, motif scaffolding, and peptide co-design, validating a new paradigm for flexible-length protein design.</p>
+                                        <p>Together, these works suggest a broader foundation for scientific generative modeling: designing probability paths that respect the geometry, symmetry, and variable-dimensional structure of scientific data.</p>
+                                    </details>
+                                </li>
+                                <li>
+                                    <span class="schedule-time">8:40 AM - 9:10 AM</span>
+                                    <strong><a class="person-link" href="https://ibis.t.u-tokyo.ac.jp/suzuki/" target="_blank" rel="noopener noreferrer">Taiji Suzuki</a></strong>
+                                    <p class="schedule-talk-title">Statistical optimality theory and adaptation method of diffusion models</p>
+                                    <details class="schedule-abstract">
+                                        <summary>Show Abstract</summary>
+                                        <p>This talk explores recent theoretical and methodological advancements in diffusion models. On the theoretical side, we demonstrate that diffusion models can circumvent the curse of dimensionality by discovering intrinsic low-dimensional structures within data distributions. We discuss this capability for both continuous and discrete variables and establish their theoretical optimality, showing that these advantages are driven by their feature learning abilities.</p>
+                                        <p>Methodologically, we introduce novel inference-time-adaptation/post-training techniques for discrete diffusion models. Leveraging Doob's h-transform as our primary technical tool, we demonstrate that integrating this transform with the efficient sampling capabilities of diffusion models facilitates effective inference time adaptation without explicit parameter updates. Specifically, our approach enables reinforcement learning on the unmasking order distribution without requiring model updates, yielding substantial performance improvements, and we show the unmasking order adaptation has a significant impact on the performance improvement.</p>
+                                    </details>
+                                </li>
+                                <li><span>9:10 AM - 10:00 AM</span><strong>Poster &amp; Break</strong></li>
+                                <li>
+                                    <span class="schedule-time">10:00 AM - 10:30 AM</span>
+                                    <strong><a class="person-link" href="https://people.eecs.berkeley.edu/~yima/" target="_blank" rel="noopener noreferrer">Yi Ma</a></strong>
+                                    <p class="schedule-talk-title">Pursuing the Nature of Intelligence</p>
+                                    <details class="schedule-abstract">
+                                        <summary>Show Abstract</summary>
+                                        <p>In this talk, we will try to clarify different levels and mechanisms of intelligence from historical, scientific, mathematical, and computational perspective. From the evolution of intelligence in nature, from phylogenetic, to ontogenetic, societal, and to scientific intelligence, we will try to shed light on how to understand the true nature of the seemingly dramatic advancements in the technologies of machine intelligence in the past decade. We achieve this goal by developing a principled theoretical framework to explain deductively the practices of deep representation learning from the first principle of pursuing low-dimensional structures in data distributions. This framework not only reveals true nature hence both capabilities and limitations of the current deep architectures, and but also provides principled guidelines to develop more complete and more efficient learning architectures and systems. Eventually, we will clarify the difference and relationship between Knowledge and Intelligence, which may guide us to pursue the goal of developing systems with true intelligence, at least at the level for a predictive and generative memory. If time permits, we will also showcase some of the ongoing new technological developments towards realizing intelligence within an open real physical world.</p>
+                                    </details>
+                                </li>
+                                <li><span>10:30 AM - 11:00 AM</span><strong><a class="person-link" href="https://hai.stanford.edu/people/surya-ganguli" target="_blank" rel="noopener noreferrer">Surya Ganguli</a></strong></li>
+                                <li><span>11:00 AM - 11:45 AM</span><strong>3 Oral Presentations</strong></li>
+                                <li><span>11:45 AM - 1:00 PM</span><strong>Lunch Break</strong></li>
                             </ul>
                         </div>
 
                         <div class="schedule-column">
                             <h3>Afternoon</h3>
                             <ul class="schedule-list">
-                                <li><span>1:00 PM</span><strong><a class="person-link" href="https://engineering.princeton.edu/faculty/mengdi-wang" target="_blank" rel="noopener noreferrer">Mengdi Wang</a></strong></li>
-                                <li><span>1:30 PM</span><strong><a class="person-link" href="https://pehlevan.seas.harvard.edu/" target="_blank" rel="noopener noreferrer">Cengiz Pehlevan</a></strong></li>
-                                <li><span>2:00 PM</span><strong>Poster &amp; Break</strong></li>
-                                <li><span>2:50 PM</span><strong><a class="person-link" href="https://www.ism.ac.jp/~fukumizu/" target="_blank" rel="noopener noreferrer">Kenji Fukumizu</a></strong></li>
-                                <li><span>3:20 PM</span><strong>3 Oral Presentations</strong></li>
-                                <li><span>4:05 PM</span><strong>Panel Discussion</strong></li>
-                                <li><span>4:50 PM</span><strong>Awards &amp; Closing</strong></li>
+                                <li><span>1:00 PM - 1:30 PM</span><strong><a class="person-link" href="https://engineering.princeton.edu/faculty/mengdi-wang" target="_blank" rel="noopener noreferrer">Mengdi Wang</a></strong></li>
+                                <li>
+                                    <span class="schedule-time">1:30 PM - 2:00 PM</span>
+                                    <strong><a class="person-link" href="https://pehlevan.seas.harvard.edu/" target="_blank" rel="noopener noreferrer">Cengiz Pehlevan</a></strong>
+                                    <p class="schedule-talk-title">Solvable Models of Test-Time Scaling</p>
+                                    <details class="schedule-abstract">
+                                        <summary>Show Abstract</summary>
+                                        <p>Modern generative models increasingly spend compute at inference time. When does this extra compute improve performance, when does it saturate, and when can it backfire? This talk introduces a family of exactly solvable high-dimensional models, analyzed using tools from random matrix theory, that make these questions analytically tractable and offer a quantitative theory of test-time scaling.</p>
+                                    </details>
+                                </li>
+                                <li><span>2:00 PM - 2:50 PM</span><strong>Poster &amp; Break</strong></li>
+                                <li>
+                                    <span class="schedule-time">2:50 PM - 3:20 PM</span>
+                                    <strong><a class="person-link" href="https://www.ism.ac.jp/~fukumizu/" target="_blank" rel="noopener noreferrer">Kenji Fukumizu</a></strong>
+                                    <p class="schedule-talk-title">Analysis of OT-Flow Matching under Manifold Hypothesis</p>
+                                    <details class="schedule-abstract">
+                                        <summary>Show Abstract</summary>
+                                        <p>To understand why generative models such as flow matching and diffusion models succeed on high-dimensional data, it is essential to analyze their behavior under the manifold hypothesis, which posits that the data distribution is supported on a low-dimensional submanifold. In this talk, we focus on Optimal Transport Conditional Flow Matching and show an exact proximal form via an extended Brenier potential under the manifold hypothesis. More precisely, the mapping to recover the target point, or the &quot;decoder&quot;, is expressed by a proximal operator, which yields an explicit expression of the vector field. Using mathematical tools from convex analysis, we analyze the local behavior of the vector field around the manifold and show the stability of the manifold structure against perturbation to the dynamics: the dynamics does not expand or shrink exponentially along manifold directions.</p>
+                                    </details>
+                                </li>
+                                <li><span>3:20 PM - 4:05 PM</span><strong>3 Oral Presentations</strong></li>
+                                <li><span>4:05 PM - 4:50 PM</span><strong>Panel Discussion</strong></li>
+                                <li><span>4:50 PM - 5:00 PM</span><strong>Awards &amp; Closing</strong></li>
                             </ul>
                         </div>
                     </div>

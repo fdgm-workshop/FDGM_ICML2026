@@ -429,6 +429,60 @@ h1 {
     font-size: 1.06rem;
 }
 
+.schedule-talk-title {
+    margin: 0.08rem 0 0;
+    color: var(--ink);
+    font-size: 0.98rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.45;
+}
+
+.schedule-abstract {
+    margin-top: 0.45rem;
+}
+
+.schedule-abstract summary {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    min-height: 2rem;
+    padding: 0.42rem 0.75rem;
+    border: 1px solid rgba(47, 111, 159, 0.28);
+    border-radius: 8px;
+    background: #f7fbff;
+    color: var(--accent);
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 800;
+    line-height: 1;
+    list-style: none;
+}
+
+.schedule-abstract summary::-webkit-details-marker {
+    display: none;
+}
+
+.schedule-abstract summary::before {
+    content: "";
+    display: inline-block;
+    margin-right: 0.45rem;
+    border-top: 0.28rem solid transparent;
+    border-bottom: 0.28rem solid transparent;
+    border-left: 0.38rem solid currentColor;
+}
+
+.schedule-abstract[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.schedule-abstract p {
+    margin: 0.65rem 0 0;
+    color: var(--muted);
+    font-size: 0.96rem;
+    line-height: 1.58;
+}
+
 .people-grid,
 .organizers-grid {
     display: grid;
