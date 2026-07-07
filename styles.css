@@ -438,6 +438,34 @@ h1 {
     line-height: 1.45;
 }
 
+.oral-list {
+    display: grid;
+    gap: 0.32rem;
+    margin: 0.25rem 0 0;
+    padding-left: 1.1rem;
+}
+
+.oral-list li {
+    display: list-item;
+    padding: 0;
+    border-top: 0;
+    color: var(--ink);
+    font-size: 0.98rem;
+    font-style: italic;
+    line-height: 1.45;
+}
+
+.oral-list a {
+    color: inherit;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.16em;
+}
+
+.oral-list a:hover,
+.oral-list a:focus-visible {
+    color: var(--accent);
+}
+
 .schedule-abstract {
     margin-top: 0.45rem;
 }
